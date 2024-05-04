@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" />
+</head>
+<body>
+<main>
+    <div class="box">
+        <div class="inner-box">
+            <div class="forms-wrap">
+                <form action="/register" method="POST" autocomplete="off" class="sign-in-form">
+                    <div class="logo">
+                        <img src="{{url_for('static', filename='logo.png')}}" alt="HeartCare" />
+                        <h4>HeartCare</h4>
+                    </div>
+                    <div class="heading">
+                        <h2>Register form</h2>
+                        <h6>Already have an account?</h6>
+                        <a href="/login" class="toggle">Sign in</a>
+                    </div>
+
+                    <div class="actual-form">
+                        <div class="input-wrap">
+                            <input
+                                type="text"
+                                class="input-field"
+                                autocomplete="off"
+                                required
+                                type="text" class="form-control" id="name" name="name"
+                            />
+                            <label>Name</label>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input
+                                type="email"
+                                class="input-field"
+                                autocomplete="off"
+                                required
+                                type="email" class="form-control" id="email" name="email"
+                            />
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input
+                                type="password"
+                                minlength="4"
+                                class="input-field"
+                                autocomplete="off"
+                                required
+                                type="password" class="form-control" id="pwd" name="password"
+                            />
+                            <label>Password</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark sign-btn">Submit</button>
+<!--                        <a href="/login" class="btn btn-primary">Login</a>-->
+                    </div>
+                </form>
+            </div>
+
+            <div class="carousel">
+                <div class="images-wrapper">
+                    <img src="{{url_for('static', filename='image1.png')}}" class="image img-1 show" alt="" />
+                    <img src="{{url_for('static', filename='image2.png')}}" class="image img-2" alt="" />
+                    <img src="{{url_for('static', filename='image1.png')}}" class="image img-3" alt="" />
+                </div>
+
+                <div class="text-slider">
+                    <div class="text-wrap">
+                    <div class="text-group">
+                        <h3>AI-driven heart health for a healthier.</h3>
+                        <h3>Knowledge to stay ahead of heart risks</h3>
+                        <h3>Fight heart disease, take control today.</h3>
+                    </div>
+                </div>
+
+
+                    <div class="bullets">
+                        <span class="active" data-value="1"></span>
+                        <span data-value="2"></span>
+                        <span data-value="3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    const inputs = document.querySelectorAll(".input-field");
+    const toggle_btn = document.querySelectorAll(".toggle");
+    const main = document.querySelector("main");
+    const bullets = document.querySelectorAll(".bullets span");
+    const images = document.querySelectorAll(".image");
+
+    inputs.forEach((inp) => {
+        inp.addEventListener("focus", () => {
+            inp.classList.add("active");
+        });
+        inp.addEventListener("blur", () => {
+            if (inp.value != "") return;
+            inp.classList.remove("active");
+        });
+    });
+
+    toggle_btn.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            main.classList.toggle("sign-up-mode");
+        });
+    });
+
+    function moveSlider() {
+        let index = this.dataset.value;
+
+        let currentImage = document.querySelector(`.img-${index}`);
+        images.forEach((img) => img.classList.remove("show"));
+        currentImage.classList.add("show");
+
+        const textSlider = document.querySelector(".text-group");
+        textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
+
+        bullets.forEach((bull) => bull.classList.remove("active"));
+        this.classList.add("active");
+    }
+
+    bullets.forEach((bullet) => {
+        bullet.addEventListener("click", moveSlider);
+    });
+</script>
+</body>
+</html>
