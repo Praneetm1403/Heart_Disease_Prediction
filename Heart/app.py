@@ -15,7 +15,10 @@ import os
 # baises = joblib.load("filename.pkl")
 
 # Load the trained model
-pipe = pickle.load(open("trained_model1.pkl", 'rb'))
+model_file_path = os.path.join(os.path.dirname(__file__), 'trained_model1.pkl')
+
+# Load the trained model
+pipe = pickle.load(open(model_file_path, 'rb'))
 
 
 
