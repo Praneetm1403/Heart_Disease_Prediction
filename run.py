@@ -1,4 +1,4 @@
-from Heart import app
+from Heart.app import app
 
 if __name__ == '__main__':
     app.run(debug=True)
