@@ -1,3 +1,3 @@
-from heart import app
+from Heart import create_app
 
-app = app();
+app = create_app()
