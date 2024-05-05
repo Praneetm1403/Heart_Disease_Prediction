@@ -19,7 +19,10 @@ model_file_path = os.path.join(os.path.dirname(__file__), 'trained_model1.pkl')
 # Load the trained model
 pipe = pickle.load(open(model_file_path, 'rb'))
 
+csv_file_path = os.path.join(os.path.dirname(__file__), 'merged.csv')
 
+# Load the CSV file
+df = pd.read_csv(csv_file_path)
 
 # Handle missing values using SimpleImputer
 imputer = SimpleImputer(strategy='mean')
