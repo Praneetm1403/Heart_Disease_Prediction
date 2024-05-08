@@ -61,6 +61,7 @@ To get started with this project, follow these steps:
  ┃ ┣ 📜start.html
  ┃ ┗ 📜user_input_data.html
  ┣ 📜app.py
+ ┣ 📜trained_model.pkl
  ┗ 📜requirements.txt
 ```
 
