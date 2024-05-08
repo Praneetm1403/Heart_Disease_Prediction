@@ -68,5 +68,5 @@ tzdata==2024.1
 urllib3==2.2.1
 wcwidth==0.2.13
 webencodings==0.5.1
-Werkzeug==3.0.2
+Werkzeug==3.0.3
 yarg==0.1.9
