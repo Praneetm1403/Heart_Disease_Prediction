@@ -32,7 +32,6 @@ To get started with this project, follow these steps:
    ```
    python app.py
    ```
-   (or the command specific to your project setup)
 
 ## Project Structure
 ```
