@@ -1,0 +1,314 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+
+      .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+      }
+
+      .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+      }
+
+      .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+}
+
+a:link{
+text-decoration:none;
+}
+
+:root{
+    --red:#d01c28;
+    --gray: #2e2e2e;
+}
+
+nav img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+button{
+    all: unset;
+    padding: 6px 16px;
+    background: var(--red);
+    height: 32px;
+    color: white;
+    font-weight: 500;
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+}
+
+nav ul{
+  font-weight: 500;
+    display: flex;
+    list-style: none;
+    gap: 90px;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 72px);
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.hero h1{
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+}
+
+.hero p{
+  margin-top: -30px;
+  font-weight: 600;
+  color: var(--gray);
+  max-width: 400px;
+}
+
+.hero-btn button {
+  font-size: 24px;
+}
+
+.hero-btn{
+  display: flex;
+  gap: 40px;
+}
+
+.sign-btn:hover {
+  background-color: #8371fd;
+}
+
+.secondary-btn{
+  background:transparent;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+}
+
+.brand-icons {
+  display: flex;
+  gap: 16px;
+}
+
+      #age{
+        width:200px;
+      }
+
+      #sex{
+        width:200px;
+      }
+
+      #cp{
+        width:200px;
+      }
+
+      #bp{
+        width:200px;
+      }
+
+      .row>div{
+      margin:10px;
+      }
+      .container{
+      margin-top:auto;
+      }
+#loginPage {
+        display: none; /* Hide the login page by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+
+      .login-form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        margin: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .login-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .login-form input[type="text"],
+      .login-form input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+      }
+
+      .login-form button {
+        background-color: var(--red);
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #value-meanings {
+      margin: 2rem 0;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    #value-meanings strong {
+      font-weight: bold;
+    }
+
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .container_para {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+    .card_para {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 10px;
+      width: 300px;
+    }
+    .card_para h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .card_para p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
