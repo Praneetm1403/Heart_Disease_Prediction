@@ -74,8 +74,9 @@ Dashboard Page![image](https://github.com/SachinMhetre678/Heart_Disease_Predicti
 
 User Input Data Page![image](https://github.com/SachinMhetre678/Heart_Disease_Prediction/assets/138901374/faeaed06-27b1-43dc-9af0-cce434df45d8)
 
-## Acknowledgments
-- Special thanks to contributors   
+
+Contributors
+![Sachin Mhetre](https://github.com/SachinMhetre678)   
 ![Moksh Oswal](https://github.com/m-oswal)  
 ![Praneet Mahendrakar](https://github.com/Praneetm1403)  
 Prabhat Shankar
